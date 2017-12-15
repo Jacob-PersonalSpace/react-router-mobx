@@ -1,0 +1,8 @@
+{
+  "name": "react-router-mobx",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Jacob-PersonalSpace/react-router-mobx.git",
+  "author": "GFG1\\fengjac <fengjac@esquel.com>",
+  "license": "MIT"
+}
