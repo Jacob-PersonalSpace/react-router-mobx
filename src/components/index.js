@@ -1,7 +1,15 @@
 import React from 'react';
 
-export const Hello = props => {
+import Hello from './Hello.jsx';
+import World from './World.jsx';
+
+const App = props => {
     return (
-        <div>Hello World!!</div>
+        <div>
+            <Hello />
+            <World />
+        </div>
     )
 }
+
+export default App;

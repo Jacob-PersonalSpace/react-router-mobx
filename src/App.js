@@ -1,9 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { AppContainer } from 'react-hot-loader'
 
-import { Hello } from './components/index';
+import App from './components/index';
 
-ReactDOM.render(
-    <Hello />,
-    document.getElementById('root')
-)
+const render = Component => {
+    ReactDOM.render(
+        <AppContainer>
+            <Component />
+        </AppContainer>,
+        document.getElementById('root')
+    )
+}
+
+render(App)
+
+if (module.hot) {
+    module.hot.accept('./components/index', () => {
+        render(App)
+    })
+}
