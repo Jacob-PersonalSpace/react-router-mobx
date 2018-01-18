@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import '../css/world.less'
+
 class World extends Component {
     constructor(props) {
         super(props);
@@ -18,7 +20,7 @@ class World extends Component {
     }
 
     render() {
-        return <div>World </div>
+        return <div className="worldcolor">World </div>
     }
 }
 

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import '../css/hello.less'
+
 class Hello extends Component {
     constructor(props) {
         super(props);
@@ -18,7 +20,7 @@ class Hello extends Component {
     }
 
     render() {
-        return <div>Hello </div>
+        return <div className="hellocolor">Hello </div>
     }
 }
 
