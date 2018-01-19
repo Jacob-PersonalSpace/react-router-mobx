@@ -1,22 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { AppContainer } from 'react-hot-loader'
+import React from 'react'
+import { render } from 'react-dom'
+import App from './components/index'
 
-import App from './components/index';
+const root = document.createElement('div')
+document.body.appendChild(root)
 
-const render = Component => {
-    ReactDOM.render(
-        <AppContainer>
-            <Component />
-        </AppContainer>,
-        document.getElementById('root')
-    )
-}
-
-render(App)
-
-if (module.hot) {
-    module.hot.accept('./components/index', () => {
-        render(App)
-    })
-}
+render(<App />, root)

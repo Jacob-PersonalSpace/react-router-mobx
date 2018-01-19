@@ -1,15 +1,5 @@
-import React from 'react';
+import React from 'react'
+import { hot } from 'react-hot-loader'
+import Routes from './Routes'
 
-import Hello from './Hello.jsx';
-import World from './World.jsx';
-
-const App = props => {
-    return (
-        <div>
-            <Hello />
-            <World />
-        </div>
-    )
-}
-
-export default App;
+export default hot(module)(Routes)

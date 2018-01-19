@@ -4,7 +4,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const root = path.resolve(__dirname, '../')
-const ASSET_PATH = process.env.ASSET_PATH || '/'
 
 module.exports = {
     entry: {
@@ -13,7 +12,6 @@ module.exports = {
     output: {
         filename: '[name].bundle.js',
         path: path.join(root, 'dist'),
-        publicPath: ASSET_PATH
     },
     module: {
         rules: [
@@ -44,8 +42,5 @@ module.exports = {
             template: path.join(root, 'index.html'),
             inject: 'body'
         }),
-        new webpack.DefinePlugin({
-            'process.env.ASSET_PATH': JSON.stringify(ASSET_PATH)
-        })
     ],
 };

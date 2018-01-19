@@ -20,7 +20,7 @@ class World extends Component {
     }
 
     render() {
-        return <div className="worldcolor">World </div>
+        return <div className="worldcolor">World3 </div>
     }
 }
 
